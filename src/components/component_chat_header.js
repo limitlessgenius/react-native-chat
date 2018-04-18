@@ -1,12 +1,15 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const ChatHeader = ({headerTitle}) => {
-
+const ChatHeader = (props) => {
+	
 	const { containerStyle, textStyle } = styles
+
+	console.log('TITLE', props.headerTitle)
+
 	return(
 		<View style={containerStyle}>
-			<Text style={textStyle}>{headerTitle}</Text>
+			<Text style={textStyle}>{props.headerTitle}</Text>
 		</View>
 	)
 }
@@ -26,10 +29,9 @@ const styles = {
 	}, 
 	textStyle: { 
 		fontSize: 20, 
+		color: 'black', 
 	}
 }
-
-
 
 export default ChatHeader
 

@@ -7,14 +7,13 @@ class App extends Component {
 	render() {
 		return(
 			<View>
-				<ChatHeader headerTitle={"Chat"}/>
+				<ChatHeader headerTitle={"Chat"} />
 			</View>
 		)
 	}
 }
 
 export default App
-
 
 
 
